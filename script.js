@@ -32,7 +32,8 @@ var fetchData = function(user) { return (
 
 fetchData('liam48D').then(data => {
   console.log('Customizing based on data', data);
-  document.body.style.backgroundImage = null;
-  document.body.style.backgroundColor = data.background_color;
+  var wrapper = document.getElementById('pagewrapper');
+  wrapper.style.backgroundImage = 'unset';
+  wrapper.style.backgroundColor = data.background_color;
   console.log('okay!');
 });
