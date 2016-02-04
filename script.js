@@ -33,7 +33,16 @@ var fetchData = function(user) { return (
 fetchData('liam48D').then(data => {
   console.log('Customizing based on data', data);
   var wrapper = document.getElementById('pagewrapper');
-  wrapper.style.backgroundImage = 'unset';
-  wrapper.style.backgroundColor = data.background_color;
+  wrapper.style.backgroundImage = `url(${url}/${data.background_image})`;
   console.log('okay!');
 });
+
+
+
+
+
+
+
+
+
+
