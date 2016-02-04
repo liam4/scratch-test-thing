@@ -30,7 +30,7 @@ var fetchData = function(user) { return (
 
 )};
 
-fetchData('liam48D').then(data => {
+fetchData(user).then(data => {
   console.log('Customizing based on data', data);
   var wrapper = document.getElementById('pagewrapper');
   wrapper.style.backgroundImage = `url(${url}/${data.background_image})`;
